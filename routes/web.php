@@ -17,7 +17,7 @@ Route::middleware(['auth'])->group(function () {
         return view('dashboard');
     })->name('dashboard');
 
-    // Resource routes for categories, events, and attendees
+    
     Route::resource('categories', CategoryController::class);
     Route::resource('events', EventController::class);
     Route::resource('attendees', AttendeeController::class); 
